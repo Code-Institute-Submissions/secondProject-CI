@@ -1,0 +1,27 @@
+.test-header {
+    background-color: red;
+    width: 60%;
+}
+
+.test-wrapper {
+    background-color: green;
+    width: 80%;
+    height: 80%;
+}
+
+.test-body {
+    background-color: blue;
+}
+
+.test-footer {
+    background-color: yellow;
+    height: 10px;
+}
+
+.test-map {
+    background-color: purple;
+}
+
+.test-carousel {
+    background-color: orange;
+}
