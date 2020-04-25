@@ -1,12 +1,35 @@
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Raleway', sans-serif;
+*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-fancy {
+    font-family: 'Pacifico', cursive;
+}
+
+.title {
+    color: rgb(250, 249, 249);
+}
+
+.lead-text {
+    font-size: 1.6em;
+    color: rgb(250, 249, 249);
+}
+
 .test-header {
     background-color: red;
     width: 60%;
+    margin: 50px 20px;
 }
 
 .test-wrapper {
-    background-color: green;
-    width: 80%;
-    height: 80%;
+    background-color: #F5F5DC;
+    height: 1500px;
+    border-radius: 1em;
 }
 
 .test-body {
@@ -14,8 +37,10 @@
 }
 
 .test-footer {
-    background-color: yellow;
-    height: 10px;
+    background-color:#252525;
+    height: 10em;
+    margin-top: 10em;
+    padding: 20px;
 }
 
 .test-map {
@@ -24,4 +49,18 @@
 
 .test-carousel {
     background-color: orange;
+}
+
+.background {
+    background: url('../img/background1.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.footer-item {
+    color: rgb(250, 249, 249);
+    font-size: 1.5em;
 }

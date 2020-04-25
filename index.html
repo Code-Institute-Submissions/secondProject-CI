@@ -5,28 +5,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Travingo</title>
 </head>
 
-<body>
+<body class="background">
 
 	<!------HEADER------>
 
 	<header>
 
-		<div class="container test-header">
-			<div class="row">
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ipsum delectus autem in
-					necessitatibus
-					reprehenderit, iste, nisi voluptatum, sapiente beatae sed nobis totam assumenda dignissimos
-					quibusdam
-					aut eum itaque consequatur!</p>
+		<div class="jumbotron jumbotron-fluid bg-transparent">
+			<div class="container">
+				<h1 class="display-1 text-center font-fancy title"><b>Travingo</b></h1>
+                <hr class="my-4">
+				<p class="lead text-center lead-text">
+					<b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit unde dolorem distinctio numquam praesentium officiis harum, rerum suscipit delectus quibusdam consequuntur totam nulla est vero reiciendis itaque dolores. At ab, qui harum optio magnam quidem iure repudiandae quia aliquam, fugit quibusdam ipsa maxime id eius sit a dolorem iste!</b>
+				</p>
 			</div>
 		</div>
 
@@ -35,8 +34,7 @@
 	<!------WRAPPER------>
 
 	<section>
-		<div class="container test-wrapper"">
-            <div class=" row">
+		<div class="container test-wrapper p-3">
 
 			<!------CAROUSEL------>
 
@@ -44,6 +42,49 @@
 
 				<div class=" contaner test-carousel">
 					<div class="row">
+						<div class="col-12">
+							<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
+									</li>
+									<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+									<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="assets/img/chojnik.png" class="d-block w-100 h-100" alt="...">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>First slide label</h5>
+											<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="assets/img/chojnik2.jpg" class="d-block w-100 h-100" alt="...">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>Second slide label</h5>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="assets/img/chojnik3.jpg" class="d-block w-100 h-100" alt="...">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>Third slide label</h5>
+											<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</article>
@@ -58,7 +99,6 @@
 				</div>
 			</article>
 
-		    </div>
 		</div>
 	</section>
 
@@ -67,15 +107,32 @@
 	<footer>
 
 		<div class="container-fluid test-footer">
-			<div class="row">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore libero assumenda voluptatibus
-					adipisci minima excepturi molestias sequi sed. Aliquam officiis repellendus dicta consequatur
-					nostrum placeat explicabo quis minus magnam sapiente.</p>
+			<div class="row justify-content-center">
+                <h4 class="footer-item">Made for educational purpose</h4>
+			</div>
+            <div class="row justify-content-center">
+                <p class="footer-item">By: Luke Bielewski</p>
+			</div>
+            <div class="row justify-content-center">
+                <ul class="list-inline">
+                <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/Xasthar"><i class="fab fa-facebook footer-item"></i></a></li>
+                <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/%C5%82ukasz-bielewski-215779192/"><i class="fab fa-linkedin footer-item"></i></a></li>
+                <li class="list-inline-item"><a target="_blank" href="https://github.com/Xasthar"><i class="fab fa-github footer-item"></i></a></li>
+                </ul>
 			</div>
 		</div>
 
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
