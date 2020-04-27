@@ -12,7 +12,7 @@ body {
 }
 
 .title {
-    color: rgb(250, 249, 249);
+    color: ghostwhite;
 }
 
 .lead-text {
@@ -28,7 +28,6 @@ body {
 
 .test-wrapper {
     background-color: #F5F5DC;
-    height: 1500px;
     border-radius: 1em;
 }
 
@@ -51,16 +50,11 @@ body {
     background-color: orange;
 }
 
-.background {
-    background: url('../img/background1.jpg') no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-}
-
 .footer-item {
     color: rgb(250, 249, 249);
     font-size: 1.5em;
+}
+
+div#map {
+    min-height: 480px;
 }
