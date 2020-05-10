@@ -11,72 +11,42 @@
 		integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin="" />
+        	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		crossorigin="">
+	</script>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Travingo</title>
 </head>
 
-<body class="main">
+<body>
 
-	<!------HEADER------>
+	<div class="container-fluid">
+		<div class="row">
 
-	<header>
+			<!------Controls------>
 
-		<div class="jumbotron jumbotron-fluid bg-transparent">
-			<div class="container">
-				<h1 class="display-1 text-center font-fancy title"><b>Travingo</b></h1>
-				<hr class="my-4">
-				<p class="lead text-center lead-text">
-					<b>Welcome to your personal advisor who will show you best places to see in Poland!</b>
-				</p>
+			<div class="col-3 test-controls">
+				<h2>Results</h2>
+                <hr class="my-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae distinctio iure consequuntur quam soluta obcaecati dolor,
+                 adipisci voluptates numquam provident asperiores itaque similique praesentium delectus. Commodi error dicta dignissimos temporibus.</p>
+                 
+			</div>
+
+			<!------MAP------>
+
+			<div class="col-9">
+				<div id="mapid"></div>
 			</div>
 		</div>
+	</div>
 
-	</header>
 
-	<!------SEARCHFORM------>
 
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-4 text-center">
-					<div class="card">
-						<h2 class="card-header">Outdoors</h2>
-						<div class="card-body">
-							<h5 class="card-title text-left">Mountains, National Parks, Beaches, Deserts etc.</h5>
-							<p class="card-text">When you just want to grab your hiking gear and enjoy nature!
-							</p>
-							<a href="map.html" class="btn btn-warning" target="_blank">Go!</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-4 text-center">
-					<div class="card">
-						<h2 class="card-header">Cities</h2>
-						<div class="card-body">
-							<h5 class="card-title text-left">Restaurants, Cafes, Bars, Museums, etc.</h5>
-							<p class="card-text">When you have a craving for some urban exploring!
-							</p>
-							<a href="map.html" class="btn btn-warning" target="_blank">Go!</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-4 text-center">
-					<div class="card">
-						<h2 class="card-header">Curios</h2>
-						<div class="card-body">
-							<h5 class="card-title text-left">Castles, Unusual Places, Shrines, Mines, etc.</h5>
-							<p class="card-text">When you are starving for something new!
-							</p>
-							<a href="map.html" class="btn btn-warning" target="_blank">Go!</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
 
 	<!------FOOTER------>
 
@@ -103,7 +73,7 @@
 		</div>
 
 	</footer>
-    
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>
@@ -113,6 +83,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
+	<script src="assets/js/map.js"></script>
+
 </body>
 
 </html>

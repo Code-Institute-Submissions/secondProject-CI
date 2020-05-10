@@ -4,7 +4,10 @@ font-family: 'Raleway', sans-serif;
 */
 
 body {
-    font-family: 'Raleway', sans-serif;
+   font-family: 'Raleway', sans-serif; 
+}
+
+.main {
     background: url('../img/background.jpg') no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,7 +21,7 @@ body {
 }
 
 .title {
-    color: #FF9917;
+    color: #000000;
 }
 
 .lead-text {
@@ -38,10 +41,6 @@ body {
     padding: 20px;
 }
 
-.test-carousel {
-    background-color: orange;
-}
-
 .footer-item {
     color: rgb(250, 249, 249);
     font-size: 1.5em;
@@ -55,4 +54,16 @@ body {
 
 div#map {
     min-height: 640px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+#mapid {
+    min-height: 720px !important;
+}
+
+.test-controls {
+    background-color: beige;
 }
