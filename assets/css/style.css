@@ -37,8 +37,8 @@ body {
 .footer-style {
     background-color:#252525;
     height: 9.5em;
-    margin-top: 10em;
     padding: 20px;
+    
 }
 
 .footer-item {
@@ -53,7 +53,7 @@ body {
 }
 
 div#map {
-    height: 100%;
+    max-height: 720px;
 }
 
 .card {
@@ -65,10 +65,6 @@ div#map {
     min-width: 720px !important;
 }
 
-.test-controls {
-    background-color: beige;
-}
-
 .listings .item {
     display:block;
     border-bottom:1px solid #eee;
@@ -76,17 +72,25 @@ div#map {
     text-decoration:none;
 }
 
-.listings .item:last-child { border-bottom:none; }
+.listings .item:last-child {
+    border-bottom:none; 
+}
+
 .listings .item .title {
     display:block;
     color:#00853e;
     font-weight:700;
 }
 
-.listings .item .title small { font-weight:400; }
+.listings .item .title small {
+    font-weight:400; 
+}
 
 .listings .item.active .title,
-.listings .item .title:hover { color:#8cc63f; }
+.listings .item .title:hover {
+     color:#8cc63f; 
+     }
+
 .listings .item.active {
     background-color:#f8f8f8;
 }
@@ -144,22 +148,16 @@ div#map {
     padding:1%;
 }
 
-.mapboxgl-popup-content h3 {
-    background:#91c949;
-    color:#fff;
-    margin:0;
-     display:block;
-     padding:10px;
-     border-radius:3px 3px 0 0;
-    font-weight:700;
-    margin-top:-15px;
+.mapboxgl-popup-content h4 {
+    color: #fff;
+    margin: 0;
+     padding: 10px;
+     border-radius: 5px 5px 0 0;
 }
 
-.mapboxgl-popup-content h4 {
+.mapboxgl-popup-content p {
     margin:0;
-    display:block;
-    padding: 10px 10px 10px 10px;
-     font-weight:400;
+    padding: 5px 10px 10px 10px;
 }
 
 .mapboxgl-popup-content div {
@@ -176,4 +174,8 @@ div#map {
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
     border-bottom-color: #91c949;
+}
+
+.map-list {
+    max-height: 720px;
 }

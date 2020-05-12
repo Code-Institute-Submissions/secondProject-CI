@@ -21,9 +21,11 @@ var spots = {
             "properties": {
               "name": "Skull Chapel",
               "address": "Stanisława Moniuszki 8a",
-              "city": "Kudowa-Zdrój",
+              "city": "Czermna",
               "country": "Poland",
               "postalCode": "57-350",
+              "wikilink": "https://en.wikipedia.org/wiki/Skull_Chapel",
+              "shortDescription": "Beautiful and morbid chapel decorated with bones and skulls in a quiet region near Czech Republic"
             }
           },
           {
@@ -31,19 +33,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.049766,
-                38.900772
+                16.930804,
+                52.234607
               ]
             },
             "properties": {
-              "phoneFormatted": "(202) 507-8357",
-              "phone": "2025078357",
-              "address": "2221 I St NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at 22nd St NW",
-              "postalCode": "20037",
-              "state": "D.C."
+              "name": "Oak Park",
+              "address": "Arciszewskiego 1/3",
+              "city": "Rogalin",
+              "country": "Poland",
+              "postalCode": "62-022",
+              "wikilink": "https://en.wikipedia.org/wiki/Rogalin_Landscape_Park",
+              "shortDescription": "A Landscape Park full of ancient oaks reaching up to 9.15m in circumference"
             }
           },
           {
@@ -51,19 +52,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.043929,
-                38.910525
+                14.476080,
+                53.214134
               ]
             },
             "properties": {
-              "phoneFormatted": "(202) 387-9338",
-              "phone": "2023879338",
-              "address": "1512 Connecticut Ave NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at Dupont Circle",
-              "postalCode": "20036",
-              "state": "D.C."
+              "name": "Crooked Forest",
+              "address": "Przemysłowa 25",
+              "city": "Nowe Czarnowo",
+              "country": "Poland",
+              "postalCode": "74-105",
+              "wikilink": "https://en.wikipedia.org/wiki/Crooked_Forest",
+              "shortDescription": "Curious grove of crooked pine trees which purpose and creation is a mystery to this day"
             }
           },
           {
@@ -71,19 +71,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.0672,
-                38.90516896
+                14.992879,
+                54.077884
               ]
             },
             "properties": {
-              "phoneFormatted": "(202) 337-9338",
-              "phone": "2023379338",
-              "address": "3333 M St NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at 34th St NW",
-              "postalCode": "20007",
-              "state": "D.C."
+              "name": "Church taken by the Sea",
+              "address": "Rewalska 1",
+              "city": "Trzęsacz",
+              "country": "Poland",
+              "postalCode": "72-344",
+              "wikilink": "https://en.wikipedia.org/wiki/Ruins_of_the_church_in_Trz%C4%99sacz",
+              "shortDescription": "Ruins of a church that was being slowly chipped and taken away by the sea"
             }
           },
           {
@@ -91,19 +90,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.002583742142,
-                38.887041080933
+                22.021652,
+                54.309901
               ]
             },
             "properties": {
-              "phoneFormatted": "(202) 547-9338",
-              "phone": "2025479338",
-              "address": "221 Pennsylvania Ave SE",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "btwn 2nd & 3rd Sts. SE",
-              "postalCode": "20003",
-              "state": "D.C."
+              "name": "Pyramid Tomb",
+              "address": "Banie Mazurskie",
+              "city": "Rapa",
+              "country": "Poland",
+              "postalCode": "19-520",
+              "wikilink": "https://en.wikipedia.org/wiki/Rapa,_Poland",
+              "shortDescription": "Mausoleum of the Fahrenheid family built in resemblance to the ancient pyramids"
             }
           },
           {
@@ -111,16 +109,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -76.933492720127,
-                38.99225245786
+                19.529540,
+                50.340453
               ]
             },
             "properties": {
-              "address": "8204 Baltimore Ave",
-              "city": "College Park",
-              "country": "United States",
-              "postalCode": "20740",
-              "state": "MD"
+              "name": "Desert in the Highlands",
+              "address": "Sosnowa",
+              "city": "Klucze",
+              "country": "Poland",
+              "postalCode": "32-310",
+              "wikilink": "https://en.wikipedia.org/wiki/B%C5%82%C4%99d%C3%B3w_Desert",
+              "shortDescription": "Desert amidst the verdant woodlands told by legends to be brought by devil himself"
             }
           },
           {
@@ -128,19 +128,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.097083330154,
-                38.980979
+                19.000559,
+                53.999949
               ]
             },
             "properties": {
-              "phoneFormatted": "(301) 654-7336",
-              "phone": "3016547336",
-              "address": "4831 Bethesda Ave",
-              "cc": "US",
-              "city": "Bethesda",
-              "country": "United States",
-              "postalCode": "20814",
-              "state": "MD"
+              "name": "Castle of the Teutonic Order",
+              "address": "Starościńska 1",
+              "city": "Malbork",
+              "country": "Poland",
+              "postalCode": "82-200",
+              "wikilink": "https://en.wikipedia.org/wiki/Malbork_Castle",
+              "shortDescription": "A classic medieval fortress built by the Teutonic Order in 1406"
             }
           },
           {
@@ -148,19 +147,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.359425054188,
-                38.958058116661
+                15.303512,
+                51.030477
               ]
             },
             "properties": {
-              "phoneFormatted": "(571) 203-0082",
-              "phone": "5712030082",
-              "address": "11935 Democracy Dr",
-              "city": "Reston",
-              "country": "United States",
-              "crossStreet": "btw Explorer & Library",
-              "postalCode": "20190",
-              "state": "VA"
+              "name": "Czocha Castle",
+              "address": "Sucha",
+              "city": "Leśna",
+              "country": "Poland",
+              "postalCode": "59-820",
+              "wikilink": "https://en.wikipedia.org/wiki/Czocha_Castle",
+              "shortDescription": "A castle surrounded by many legends"
             }
           },
           {
@@ -168,19 +166,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.10853099823,
-                38.880100922392
+                21.710913,
+                49.616520
               ]
             },
             "properties": {
-              "phoneFormatted": "(703) 522-2016",
-              "phone": "7035222016",
-              "address": "4075 Wilson Blvd",
-              "city": "Arlington",
-              "country": "United States",
-              "crossStreet": "at N Randolph St.",
-              "postalCode": "22203",
-              "state": "VA"
+              "name": "The Roots of World Oil Industry",
+              "address": "Kopalniana 35",
+              "city": "Bóbrka",
+              "country": "Poland",
+              "postalCode": "38-458",
+              "wikilink": "https://en.wikipedia.org/wiki/B%C3%B3brka,_Krosno_County",
+              "shortDescription": "Museum dedicated to the forgotten piece of oil industry history"
             }
           },
           {
@@ -188,18 +185,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -75.28784,
-                40.008008
+                21.494306,
+                54.080648
               ]
             },
             "properties": {
-              "phoneFormatted": "(610) 642-9400",
-              "phone": "6106429400",
-              "address": "68 Coulter Ave",
-              "city": "Ardmore",
-              "country": "United States",
-              "postalCode": "19003",
-              "state": "PA"
+              "name": "Wolf's Lair",
+              "address": "Gierłoż 5",
+              "city": "Gierłoż",
+              "country": "Poland",
+              "postalCode": "11-400",
+              "wikilink": "https://en.wikipedia.org/wiki/Wolf%27s_Lair",
+              "shortDescription": "The den of a german wolf almost killed by his own kind"
             }
           },
           {
@@ -207,18 +204,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -75.20121216774,
-                39.954030175164
+                17.767940,
+                50.440759
               ]
             },
             "properties": {
-              "phoneFormatted": "(215) 386-1365",
-              "phone": "2153861365",
-              "address": "3925 Walnut St",
-              "city": "Philadelphia",
-              "country": "United States",
-              "postalCode": "19104",
-              "state": "PA"
+              "name": "Moszna Castle",
+              "address": "Zamkowa 1",
+              "city": "Moszna",
+              "country": "Poland",
+              "postalCode": "47-370",
+              "wikilink": "https://en.wikipedia.org/wiki/Moszna_Castle",
+              "shortDescription": "One of the most beautiful castles in the world"
             }
           },
           {
@@ -226,19 +223,18 @@ var spots = {
             "geometry": {
               "type": "Point",
               "coordinates": [
-                -77.043959498405,
-                38.903883387232
+                15.723962,
+                50.777690
               ]
             },
             "properties": {
-              "phoneFormatted": "(202) 331-3355",
-              "phone": "2023313355",
-              "address": "1901 L St. NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at 19th St",
-              "postalCode": "20036",
-              "state": "D.C."
+              "name": "Wandering Stave Church",
+              "address": "Na Śnieżkę 8",
+              "city": "Karpacz",
+              "country": "Poland",
+              "postalCode": "58-540",
+              "wikilink": "https://en.wikipedia.org/wiki/Vang_Stave_Church",
+              "shortDescription": "A four-post single-nave stave church originally built around 1200 in the parish of Vang in the Valdres region of Norway"
             }
           }
         ]
@@ -343,13 +339,13 @@ var spots = {
           link.href = '#';
           link.className = 'title';
           link.id = "link-" + prop.id;
-          link.innerHTML = prop.name;
+          link.innerHTML = '<h4>' + prop.name + '</h4>';
 
           /* Add details to the individual listing. */
           var details = listing.appendChild(document.createElement('div'));
-          details.innerHTML = prop.city;
-          if (prop.address) {
-            details.innerHTML += ' · ' + prop.address;
+          details.innerHTML = prop.address + ' · ' + prop.city + ' · ' + prop.postalCode + '<br>';
+          if (prop.shortDescription) {
+            details.innerHTML += prop.shortDescription;
           }
 
           /**
@@ -395,7 +391,10 @@ var spots = {
         if (popUps[0]) popUps[0].remove();
         var popup = new mapboxgl.Popup({closeOnClick: true})
           .setLngLat(currentFeature.geometry.coordinates)
-          .setHTML('<h3>' + currentFeature.properties.name + '</h3>' +
-            '<h4>' + currentFeature.properties.address + '</h4>')
+          .setHTML('<h4><a target="_blank" href="' + currentFeature.properties.wikilink + '">' + currentFeature.properties.name +  '</a></h4>' + '<hr class="my-0">' + 
+            '<p><b>' + 'Address: ' + '</b>' + currentFeature.properties.address + '</p>' +
+            '<p><b>' + 'City: ' + '</b>' + currentFeature.properties.city + '</p>' +
+            '<p><b>' + 'Postalcode: ' + '</b>' + currentFeature.properties.postalCode + '</p>')
+
           .addTo(map);
       }
