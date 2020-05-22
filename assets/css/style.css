@@ -117,7 +117,7 @@ div#map {
   height: 28px;
   width: 28px;
   background-image: url('../img/marker.png');
-  background-color: rgba(0, 0, 0, 0);
+  margin-top: 10px;
 }
 
 .clearfix { display:block; }

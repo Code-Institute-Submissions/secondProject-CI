@@ -3,8 +3,28 @@ var map = new mapboxgl.Map({
     container: 'map',
     center: [19.627, 52.030],
     zoom: '5.90',
+    pitchWithRotate: false,
+    dragRotate: false,
     style: 'mapbox://styles/mapbox/streets-v11'
 });
+
+var geocoder = new MapboxGeocoder({ // Initialize the geocoder
+  accessToken: mapboxgl.accessToken, // Set the access token
+  placeholder: 'Lodging, restaurants, etc.',
+  countries: 'pl',
+  limit: 10,
+  types: 'poi',
+  mapboxgl: mapboxgl, // Set the mapbox-gl instance
+  marker: {
+color: 'lightgreen'
+},
+});
+
+// Add the geocoder to the map
+map.addControl(geocoder, 'top-left');
+
+map.addControl(new mapboxgl.NavigationControl());
+map.addControl(new mapboxgl.FullscreenControl());
 
 var spots = {
         "type": "FeatureCollection",
