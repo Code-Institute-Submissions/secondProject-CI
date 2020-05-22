@@ -8,23 +8,27 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v11'
 });
 
+//   ---Geocoder---
+
 var geocoder = new MapboxGeocoder({ // Initialize the geocoder
   accessToken: mapboxgl.accessToken, // Set the access token
   placeholder: 'Lodging, restaurants, etc.',
   countries: 'pl',
   limit: 10,
   types: 'poi',
-  mapboxgl: mapboxgl, // Set the mapbox-gl instance
+  mapboxgl: mapboxgl,
   marker: {
 color: 'lightgreen'
 },
 });
 
-// Add the geocoder to the map
-map.addControl(geocoder, 'top-left');
+//   ---Add map controls---
 
+map.addControl(geocoder, 'top-left');
 map.addControl(new mapboxgl.NavigationControl());
 map.addControl(new mapboxgl.FullscreenControl());
+
+//   ---Geojson---
 
 var spots = {
         "type": "FeatureCollection",
@@ -260,70 +264,45 @@ var spots = {
         ]
       };
       
-      /**
-       * Assign a unique id to each store. You'll use this `id`
-       * later to associate each point on the map with a listing
-       * in the sidebar.
-      */
+    //   ---Spot id---
+
       spots.features.forEach(function(spot, i){
         spot.properties.id = i;
       });
 
-      /**
-       * Wait until the map loads to make changes to the map.
-      */
+    //   ---Onload Add---
+
       map.on('load', function (e) {
-        /** 
-         * This is where your '.addLayer()' used to be, instead
-         * add only the source without styling a layer
-        */
         map.addSource("places", {
           "type": "geojson",
           "data": spots
         });
-
-        /**
-         * Add all the things to the page:
-         * - The location listings on the side of the page
-         * - The markers onto the map
-        */
         buildLocationList(spots);
         addMarkers();
       });
 
-      /**
-       * Add a marker to the map for every store listing.
-      **/
+    //   ---Markers---
+
       function addMarkers() {
-        /* For each feature in the GeoJSON object above: */
         spots.features.forEach(function(marker) {
-          /* Create a div element for the marker. */
           var el = document.createElement('div');
-          /* Assign a unique `id` to the marker. */
           el.id = "marker-" + marker.properties.id;
-          /* Assign the `marker` class to each marker for styling. */
           el.className = 'marker';
-          
-          /**
-           * Create a marker using the div element
-           * defined above and add it to the map.
-          **/
+
+    //   ---Marker div---
+
           new mapboxgl.Marker(el, { offset: [0, -23] })
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
 
-          /**
-           * Listen to the element and when it is clicked, do three things:
-           * 1. Fly to the point
-           * 2. Close all other popups and display popup for clicked store
-           * 3. Highlight listing in sidebar (and remove highlight for all other listings)
-          **/
+         //   ---flyTo event--- 
+
           el.addEventListener('click', function(e){
-            /* Fly to the point */
             flyToSpot(marker);
-            /* Close all other popups and display popup for clicked store */
             createPopUp(marker);
-            /* Highlight listing in sidebar */
+
+        //   ---Reset other---
+
             var activeItem = document.getElementsByClassName('active');
             e.stopPropagation();
             if (activeItem[0]) {
@@ -335,46 +314,41 @@ var spots = {
         });
       }
 
-      /**
-       * Add a listing for each store to the sidebar.
-      **/
+
+      //   ---Spot listing---
+
       function buildLocationList(data) {
         data.features.forEach(function(spot, i){
-          /**
-           * Create a shortcut for `store.properties`,
-           * which will be used several times below.
-          **/
           var prop = spot.properties;
 
-          /* Add a new listing section to the sidebar. */
+        //   ---Add listing---
+
           var listings = document.getElementById('listings');
           var listing = listings.appendChild(document.createElement('div'));
-          /* Assign a unique `id` to the listing. */
+
+        //   ---Add listing tags---
+
           listing.id = "listing-" + prop.id;
-          /* Assign the `item` class to each listing for styling. */
           listing.className = 'item';
 
-          /* Add the link to the individual listing created above. */
+        //   ---Add listing links---
+
           var link = listing.appendChild(document.createElement('a'));
           link.href = '#';
           link.className = 'title';
           link.id = "link-" + prop.id;
           link.innerHTML = '<h4>' + prop.name + '</h4>';
 
-          /* Add details to the individual listing. */
+        //   ---Add listing details---
+
           var details = listing.appendChild(document.createElement('div'));
           details.innerHTML = prop.address + ' · ' + prop.city + ' · ' + prop.postalCode + '<br>';
           if (prop.shortDescription) {
             details.innerHTML += prop.shortDescription;
           }
 
-          /**
-           * Listen to the element and when it is clicked, do four things:
-           * 1. Update the `currentFeature` to the store associated with the clicked link
-           * 2. Fly to the point
-           * 3. Close all other popups and display popup for clicked store
-           * 4. Highlight listing in sidebar (and remove highlight for all other listings)
-          **/
+          //   ---Display current popup---
+
           link.addEventListener('click', function(e){
             for (var i=0; i < data.features.length; i++) {
               if (this.id === "link-" + data.features[i].properties.id) {
@@ -392,10 +366,8 @@ var spots = {
         });
       }
 
-      /**
-       * Use Mapbox GL JS's `flyTo` to move the camera smoothly
-       * a given center point.
-      **/
+      //   ---flyto camera---
+
       function flyToSpot(currentFeature) {
         map.flyTo({
           center: currentFeature.geometry.coordinates,
@@ -403,9 +375,8 @@ var spots = {
         });
       }
 
-      /**
-       * Create a Mapbox GL JS `Popup`.
-      **/
+      //   ---Popup content---
+
       function createPopUp(currentFeature) {
         var popUps = document.getElementsByClassName('mapboxgl-popup');
         if (popUps[0]) popUps[0].remove();
@@ -415,6 +386,5 @@ var spots = {
             '<p><b>' + 'Address: ' + '</b>' + currentFeature.properties.address + '</p>' +
             '<p><b>' + 'City: ' + '</b>' + currentFeature.properties.city + '</p>' +
             '<p><b>' + 'Postalcode: ' + '</b>' + currentFeature.properties.postalCode + '</p>')
-
           .addTo(map);
       }
