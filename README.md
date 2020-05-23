@@ -1,12 +1,12 @@
 # [CurioFinder](https://xasthar.github.io/secondProject-CI/)
 
-Did you ever wonder how many unusual places are there around the globe?
-Like the famous Paris Catacombs or the Easter Island.
+Did you ever wonder how many unusual places are there around the globe?\
+Like the famous Paris Catacombs or the Easter Island.\
 I've made this little website to show couple of example places from Poland.
  
 ## UX
  
-This website was made to encourage people into travelling to mostly remote areas and see the places I have shown them for themselves.
+This website was made to encourage people into travelling to mostly remote areas and see the places I have shown them for themselves.\
 The demographic of this website would consist of either:
 
 * People already used to travelling that would know how to get by in more rural areas.
@@ -35,18 +35,20 @@ It might drive me to click on the links to wiki and hopefully plan to travel to 
 
 ## Features
 
-The website is comprised of two columns: one for the listing and the second for the map.
-The listing has information about different places around Poland.
+The website is comprised of two columns: one for the listing and the second for the map.\
+The listing has information about different places around Poland.\
 The map has markers all over Poland representing interesting and unusual places to see.
  
 ### Existing Features
 
-- Listing - Every item in the list has a:
+##### Listing 
+Every item in the list has a:
 * Clickable name that moves the map to the corresponding marker
 * An address to the aforementioned place
 * A short description intending to interest the reader
 
-- Map - The Map is comprised of:
+##### Map
+The Map is comprised of:
 * Markers with popups showing address and also clickable title refering the user to wikipedia page about the topic.
 * Map controls as in zoom altough you could also zoom with mousescroll, compass showing the cardinal directions and fullscreen mode.
 * Searchbar filtered to only show points of interest in Poland.
@@ -62,22 +64,14 @@ Selecting a list item will highlight it and make the map fly to the correspondin
 
 ## Technologies Used
 
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
- - Overall structure
-* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
- - Stylizing elements
-* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
- - Background logic
-* [MAPBOX](https://en.wikipedia.org/wiki/Mapbox)
- - Map tiles & [MAPGLJS](https://docs.mapbox.com/mapbox-gl-js/api/)
-* [OpenStreetMap](https://en.wikipedia.org/wiki/OpenStreetMap)
- - Map data
-* [Bootstrap 4.5](https://getbootstrap.com/)
- - For structuring
-* [FontAwesome](https://fontawesome.com/)
- - Icons
-* [Google Fonts](https://fonts.google.com/)
- - Fonts
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) Overall structure
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) Stylizing elements
+* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript) Background logic
+* [MAPBOX](https://en.wikipedia.org/wiki/Mapbox) Map tiles & [MAPGLJS](https://docs.mapbox.com/mapbox-gl-js/api/)
+* [OpenStreetMap](https://en.wikipedia.org/wiki/OpenStreetMap) Map data
+* [Bootstrap 4.5](https://getbootstrap.com/) For structuring
+* [FontAwesome](https://fontawesome.com/) Icons
+* [Google Fonts](https://fonts.google.com/) Fonts
 
 ## Testing
 
@@ -92,8 +86,8 @@ Every user described above succesfully retrieved information without technical p
 1. Every Popup title had a reference link to wikipedia working.
 1. Multiple clicking didn't mess with the moving process of the map
 
-One user complained about the lack of sorting in the list which was already added to the "To do list"
-Using the website on smaller resolutions albeit unwieldy in places because the searchbox and popups dont scale well enough is working without problems.
+One user complained about the lack of sorting in the list which was already added to the "To do list"\
+Using the website on smaller resolutions albeit unwieldy in places because the searchbox and popups dont scale well enough is working without problems.\
 Only bug or inconvenience was that the searchbox isn't precise enough with it's search beacuse many of the places are in really rural areas without clear lodging or restaurants in the system.
 Mapbox has a proximity Bias system but adding it to many places at once would be messy in the js file so a workaround is added to a "To do list"
 
