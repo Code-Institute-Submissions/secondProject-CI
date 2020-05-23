@@ -93,9 +93,9 @@ Mapbox has a proximity Bias system but adding it to many places at once would be
 
 ## Deployment
 
-The website was made in Gitpod and deployed to [this](https://github.com/Xasthar/secondProject-CI) page.
-It has several more files used for configuration which are adeed to the gitignore file as to not clutter the repo.
-If you missed the demo you can also find it here [https://xasthar.github.io/secondProject-CI/]
+The website was made in Gitpod and deployed to [this](https://github.com/Xasthar/secondProject-CI) page.\
+It has several more files used for configuration which are adeed to the gitignore file as to not clutter the repo.\
+If you missed the demo you can also find it here: [https://xasthar.github.io/secondProject-CI/]
 
 ## Credits
 
